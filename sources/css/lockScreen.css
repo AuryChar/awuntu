@@ -1,0 +1,86 @@
+body {
+    background-color: #131313;
+}
+
+i {
+    font-size: 1.2em;
+}
+
+.default-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    font-size: .9em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nothing:hover {
+    background-color: transparent;
+}
+
+.top-func {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 8em;
+    gap: 9px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    margin: 2px;
+    user-select: none;
+    transition: all 0.1s ease-in-out;
+} .top-func:hover {
+    background-color: #4b4b4b;
+}
+
+.user {
+    background-color: #1d1d1d;
+    padding: 25px;
+    min-width: 20em;
+    display: flex;
+    gap: 10px;
+    border-radius: 7px;
+    user-select: none;
+    transition: all .1s ease-in-out;
+} .user:hover {
+    background-color: #2b2b2b;   
+}
+
+button {
+    color: #f2f2f2;
+    padding: 5px;
+    font-size: 1.1em;
+    min-height: 40px;
+    min-width: 40px;
+    border: none;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    transition: all .1s ease-in-out;
+} button:hover {
+    background-color: #2b2b2b;
+}
+
+input[type=password] {
+    padding: 15 px;
+    border: solid 2px #272727;
+    background-color: #1b1b1b;
+    border-radius: 7px;
+    transition: all .1s ease-in-out;
+} input[type=password]:focus {
+    caret-color: #e07149;
+    border-color: #e07149;
+    box-shadow: #e07149 0 0 3px 0;
+    outline: none;
+}

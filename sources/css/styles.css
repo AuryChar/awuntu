@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.support {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .support {
+        display: flex !important;
+    }
+    
+    body > *:not(.support) {
+        display: none;
+    }
+}
