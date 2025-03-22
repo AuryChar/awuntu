@@ -24,7 +24,7 @@ inputs.forEach(input => {
             savedName = userName.value.trim();  
             savedPsswrd = userPsswrd.value;
             localStorage.setItem('userName', savedName);
-            localStorage.setItem('userPsswrd', savedPsswrd)
+            localStorage.setItem('userPsswrd', savedPsswrd);
             window.location.href = 'lockScreen.html';
         }
     });

@@ -73,7 +73,7 @@ button {
 }
 
 input[type=password] {
-    padding: 15 px;
+    padding: 15px;
     border: solid 2px #272727;
     background-color: #1b1b1b;
     border-radius: 7px;
@@ -82,5 +82,33 @@ input[type=password] {
     caret-color: #e07149;
     border-color: #e07149;
     box-shadow: #e07149 0 0 3px 0;
+    background-color: #362013;
     outline: none;
+}
+
+.loginArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    display: none;
+}
+
+.passwordArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6em;
+}
+
+.photo {
+    background-color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 70px;
 }
