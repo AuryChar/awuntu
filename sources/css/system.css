@@ -1,0 +1,42 @@
+body {
+    background-image: url(/sources/backgrounds/warty-final-ubuntu.png);
+    background-size: cover;
+}
+
+.on-act {
+    height: 60%;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+
+.off-act {
+    height: 40%;
+    width: 8%;
+    border-radius: 20px;
+    background-color: #808080;
+}
+
+.dock {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    top: 33.2px;
+    bottom: 0;
+    font-size: 1.6em;
+    background-color: #13131391;
+} .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 2em;
+    margin: .15em;
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+} .menu:hover {
+    background-color: #4747476e;
+}   
