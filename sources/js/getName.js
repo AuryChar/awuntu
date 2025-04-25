@@ -1,7 +1,10 @@
-// Váriaveis básicas
+// Variáveis básicas
 const userName = document.querySelector('#name');
-const userPsswrd = document.querySelector('#password'); 
-const inputs = [userName, userPsswrd]
+const userPsswrd = document.querySelector('#password');
+const userPsswrdConfirm = document.querySelector('#password2');
+const inputs = [userName, userPsswrd, userPsswrdConfirm];
+const passwords = [userPsswrd, userPsswrdConfirm];
+
 let savedName;
 let savedPsswrd;
 
@@ -13,20 +16,37 @@ if (existingName && existingPsswrd) {
     window.location.href = 'lockScreen.html';
 }
 
-// Caso não exista, segue o processo padrão de criação de user
+function togglePsswrd() {
+    passwords.forEach(password => {
+        password.type = password.type === "password" ? "text" : "password";
+    });
+}
+
+
+// Evento para capturar Enter e validar os inputs
 inputs.forEach(input => {
     input.addEventListener('keyup', (event) => {
         if (event.key === 'Enter') {
             if (userName.value.trim() === '' || userPsswrd.value === '') {
-                document.body.innerHTML += `can't be empty, please refresh the page`;
+                alert('empty inputs, try again');
                 return;
             }
-            savedName = userName.value.trim();  
+            if (userPsswrdConfirm.value !== userPsswrd.value) {
+                return;
+            }
+            // Salva no localStorage e redireciona
+            savedName = userName.value.trim();
             savedPsswrd = userPsswrd.value;
             localStorage.setItem('userName', savedName);
             localStorage.setItem('userPsswrd', savedPsswrd);
             window.location.href = 'lockScreen.html';
         }
     });
+    input.addEventListener('input', () => {
+        if (userPsswrdConfirm.value !== userPsswrd.value) {
+            userPsswrdConfirm.style.backgroundColor = 'red';
+        } else {
+            userPsswrdConfirm.style.backgroundColor = '';
+        }
+    })
 });
-

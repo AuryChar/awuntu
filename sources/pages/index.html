@@ -6,6 +6,21 @@
     <title>Awuntu</title>
     <link rel="stylesheet" href="/sources/css/styles.css">
     <script src="/sources/js/getName.js" defer></script>
+    <style>
+        .support {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .support {
+        display: flex !important;
+    }
+    
+    body > *:not(.support) {
+        display: none;
+    }
+}
+    </style>
 </head>
 <body>
     <div class="support">
@@ -14,5 +29,7 @@
     <h1>first, we need your name and your password</h1>
     <input type="text" id="name" placeholder="Your name here" autocomplete="off">
     <input type="password" id="password" placeholder="Your password here" autocomplete="off">
+    <input type="password" id="password2" placeholder="Confirm" autocomplete="off">
+    <button onclick="togglePsswrd()">Show/Hide</button>
 </body>
 </html>

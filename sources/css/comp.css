@@ -23,15 +23,27 @@ i {
     justify-content: space-between;
 }
 
+.top-divisor {
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+} .configs {
+    justify-content: end;
+} .activities {
+    justify-content: start;
+} .notifications {
+    justify-content: center;
+}
+
 .top-func {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 8em;
+    height: 100%;
     gap: 9px;
     padding: 5px 15px 5px 15px;
     border-radius: 20px;
-    margin: 2px;
     user-select: none;
     transition: all 0.1s ease-in-out;
 } .top-func:hover {

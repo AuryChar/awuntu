@@ -6,17 +6,3 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.support {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    .support {
-        display: flex !important;
-    }
-    
-    body > *:not(.support) {
-        display: none;
-    }
-}

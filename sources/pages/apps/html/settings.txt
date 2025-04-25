@@ -1,0 +1,10 @@
+devido a alta quantidade de sessões da aside, as settings ficará limitada somente as seguitne sessões:
+
+sound
+power
+multitasking
+appearance
+ubuntu desktop
+----
+apps
+system(parcialmente)

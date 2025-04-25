@@ -73,3 +73,8 @@ input[type=password] {
     height: 1.5em;
     border-radius: 70px;
 }
+
+img {
+    position: fixed;
+    bottom: 2.5em;
+}
